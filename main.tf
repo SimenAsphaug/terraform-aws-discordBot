@@ -53,12 +53,7 @@ resource "aws_lambda_function" "discord_lambda" {
   }
 }
 
-resource "aws_lambda_function_url" "test_latest" {
-  function_name      = aws_lambda_function.discord_lambda.function_name
-  authorization_type = "NONE"
-}
-
-resource "aws_lambda_function_url" "test_live" {
+resource "aws_lambda_function_url" "discord_lambda_function_url" {
   function_name      = aws_lambda_function.discord_lambda.function_name
   authorization_type = "NONE"
 
