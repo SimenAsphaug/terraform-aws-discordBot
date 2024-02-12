@@ -14,7 +14,7 @@ This Terraform module creates an AWS Lambda function integrated with Discord API
 
 ```hcl
 module "discord_lambda" {
-  source = "github.com/simenAsphaug/discordBot"
+  source = "github.com/simenAsphaug/terraform-aws-discordBot"
 
   lambda_function_name = "discord-bot-lambda"
   public_key           = "your-discord-bot-public-key"
